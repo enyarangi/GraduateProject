@@ -1,0 +1,16 @@
+{
+  "auth": {
+    "datalogerphonee546e03a": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "s35aea9928": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-datalogerphone-dev-174542-authRole",
+      "UnauthRoleArn": "arn:aws:iam::727701578201:role/amplify-datalogerphone-dev-174542-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::727701578201:role/amplify-datalogerphone-dev-174542-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-datalogerphone-dev-174542-deployment",
+      "UnauthRoleName": "amplify-datalogerphone-dev-174542-unauthRole",
+      "StackName": "amplify-datalogerphone-dev-174542",
+      "StackId": "arn:aws:cloudformation:us-east-2:727701578201:stack/amplify-datalogerphone-dev-174542/a4c93e00-1150-11eb-99ee-02356f1d181e",
+      "AmplifyAppId": "d35o3d4z6et8w0"
+    },
+    "categories": {
+      "auth": {
+        "datalogerphonee546e03a": {}
+      }
+    }
+  }
+}

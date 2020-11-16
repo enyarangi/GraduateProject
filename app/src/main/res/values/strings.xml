@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DataLogger_phone</string>
+    <string name="nameAccel">Accelerometer</string>
+    <string name="nameGyro">Gyroscope</string>
+</resources>
