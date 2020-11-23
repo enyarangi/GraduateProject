@@ -15,16 +15,13 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-
 import com.amplifyframework.AmplifyException;
 import com.amplifyframework.auth.cognito.AWSCognitoAuthPlugin;
 import com.amplifyframework.core.Amplify;
 import com.amplifyframework.storage.s3.AWSS3StoragePlugin;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -185,24 +182,6 @@ public class MainActivity extends AppCompatActivity implements
             Amplify.configure(getApplicationContext());
 
             Log.e("Data Logger", "Initialized Amplify");
-//Sign up a user on AWS
-//            Amplify.Auth.signUp(
-//                    "dlogeruser001",
-//                    "kenya2030",
-//                    AuthSignUpOptions.builder().userAttribute(AuthUserAttributeKey.email(), "njengajohn37@gmail.com").build(),
-//                    result -> Log.e("AuthQuickStart ", "Result: " + result.toString()),
-//                    error -> Log.e("AuthQuickStart", "Sign up failed", error)
-//            );
-
-            //Confirm new  user Sign up
-//            Amplify.Auth.confirmSignUp(
-//                    "dlogeruser001",
-//                    "442312",
-//                    result -> Log.e("AuthQuickstart", result.isSignUpComplete() ? "Confirm signUp succeeded" : "Confirm sign up not complete"),
-//                    error -> Log.e("AuthQuickstart", error.toString())
-//            );
-
-
             //Authenticate User
             Amplify.Auth.signIn(
                     "dlogeruser001",
@@ -250,22 +229,6 @@ public class MainActivity extends AppCompatActivity implements
         accel = new float[3];
         gyro = new float[3];
         delay = "UI";
-
-//        accelX = (TextView) findViewById(R.id.accelX);
-//        accelY = (TextView) findViewById(R.id.accelY);
-//        accelZ = (TextView) findViewById(R.id.accelZ);
-//        gyroX = (TextView) findViewById(R.id.gyroX);
-//        gyroY = (TextView) findViewById(R.id.gyroY);
-//        gyroZ = (TextView) findViewById(R.id.gyroZ);
-//        txtStatus = (TextView) findViewById(R.id.txtStatus);
-//        recordView = (TextView) findViewById(R.id.recordView);
-//        storeAddressView = (TextView) findViewById(R.id.storeAddressView);
-//        recordToggleButton = (ToggleButton) findViewById(R.id.recordToggleButton);
-//        delayFastestRadioButton = (RadioButton) findViewById(R.id.delayFastestRadioButton);
-//        delayGameRadioButton = (RadioButton) findViewById(R.id.delayGameRadioButton);
-//        delayUiRadioButton = (RadioButton) findViewById(R.id.delayUiRadioButton);
-//        delayNormalRadioButton = (RadioButton) findViewById(R.id.delayNormalRadioButton);
-//        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
     }
 
     private void displayData() {
